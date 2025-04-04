@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历表格</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        body {
+            /* 将背景颜色换成背景图片，这里你需要将图片的URL替换为你实际的图片地址 */
+            background-image: url('图片/back.png');
+            background-size: cover; /* 让背景图片覆盖整个背景区域 */
+            background-repeat: no-repeat; /* 禁止背景图片重复 */
+            background-attachment: fixed; /* 背景图片固定，不随页面滚动 */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        /* 籍贯图标 */
+        tr:nth-of-type(2) th:nth-of-type(1)::before {
+            content: "\f3c5";
+            margin-right: 5px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+
+        /* 联系电话图标 */
+        tr:nth-of-type(2) th:nth-of-type(2)::before {
+            content: "\f095";
+            margin-right: 5px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+
+        /* 电子邮箱图标 */
+        tr:nth-of-type(2) th:nth-of-type(3)::before {
+            content: "\f0e0";
+            margin-right: 5px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+
+        /* 学历图标 */
+        tr:nth-of-type(3) th:nth-of-type(1)::before {
+            content: "\f19d";
+            margin-right: 5px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+
+        /* 健康状况图标 */
+        tr:nth-of-type(3) th:nth-of-type(2)::before {
+            content: "\f0fa";
+            margin-right: 5px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+
+        /* 婚姻状况图标 */
+        tr:nth-of-type(3) th:nth-of-type(3)::before {
+            content: "\f29a";
+            margin-right: 5px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>个人简历</caption>
+        <tr>
+            <th>姓名</th>
+            <td>吕君蕊</td>
+            <th>性别</th>
+            <td>女</td>
+            <th>年龄</th>
+            <td>19</td>
+           <th rowspan="3">
+                           <img src="图片/me.jpg" alt="个人照片" width="100" height="100"> <!-- 添加个人图片的img标签，这里的width和height属性可以根据需要调整 -->
+                       </th>
+        </tr>
+        <tr>
+            <th>籍贯</th>
+            <td>山东省东平县</td>
+            <th>联系电话</th>
+            <td>18854849068</td>
+            <th>电子邮箱</th>
+            <td>3880445021@qq.com</td>
+        </tr>
+        <tr>
+            <th>学历</th>
+            <td>本科</td>
+            <th>健康状况</th>
+            <td>良好</td>
+            <th>婚姻状况</th>
+            <td>未婚</td>
+        </tr>
+        <tr>
+            <th>求职意向</th>
+            <td>软件工程师</td>
+            <th>专业</th>
+            <td colspan="3">软件工程</td>
+            <th>毕业院校</th>
+            <td>鲁东大学</td>
+        </tr>
+        <tr>
+            <th>技能证书</th>
+            <td colspan="6">大学英语四级证书、计算机二级证书、软件工程师认证证书</td>
+        </tr>
+        <tr>
+            <th>个人特长与爱好</th>
+            <td colspan="6">擅长编程，熟练掌握Java、C++等编程语言、建模；爱好游泳和阅读。</td>
+        </tr>
+        <tr>
+            <th>项目经历</th>
+            <td colspan="6">参与公司内部管理系统的开发，负责用户模块的设计与实现，提高了系统的用户体验和安全性。</td>
+        </tr>
+        <tr>
+            <th>自我评价</th>
+            <td colspan="6">本人具备较强的学习能力与适应能力，在过往的学习和实践经历中，不断探索新的知识领域。在专业学习上，始终保持积极进取的态度，通过系统学习专业课程，掌握了扎实的理论基础。实践方面，曾参与多个项目，在项目中负责不同的工作内容，锻炼了团队协作和问题解决能力。具备良好的沟通能力，能够与不同性格、不同背景的人有效交流，在团队中发挥积极作用。对新事物充满好奇心，乐于尝试新的技术和方法，不断提升自己的综合素养，期望在未来的工作中能够持续成长，为公司创造价值。</td>
+        </tr>
+    </table>
+</body>
+
+</html>
