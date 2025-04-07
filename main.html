@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多级链接示例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .main-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .secondary-links {
+            display: none;
+            margin-top: 15px;
+            padding-left: 20px;
+            border-left: 3px solid #4CAF50;
+        }
+        .secondary-link {
+            display: block;
+            padding: 8px 15px;
+            background-color: #f1f1f1;
+            color: #333;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+        .secondary-link:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selection</h1>
+        <p>点击下面的链接查看二级链接：</p>
+        
+        <a href="#" class="main-link" id="mainLink">主链接</a>
+        
+        <div class="secondary-links" id="secondaryLinks">
+            <a href="知识点.html" class="secondary-link" target="_blank">知识点</a>
+            <a href="新闻.html" class="secondary-link" target="_blank">新闻</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('mainLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            var secondaryLinks = document.getElementById('secondaryLinks');
+            if (secondaryLinks.style.display === 'block') {
+                secondaryLinks.style.display = 'none';
+            } else {
+                secondaryLinks.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
